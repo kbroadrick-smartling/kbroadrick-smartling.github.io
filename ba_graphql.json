@@ -1,0 +1,6 @@
+{
+"sl_translate": "title,description,key",
+"title":"<h1>Title here</h1>",
+"description":"<p>Some paragraph</p><p>Second paragrah</p>",
+  "key":"Regular string"
+}

@@ -1,0 +1,30 @@
+<html>
+<head>
+  <script type="text/javascript" src="dcs_example.js"></script>
+  
+  </head>
+  <body>
+  <div>
+    <h1 id="heading"></h1>
+    <p id="intro" translate="no"></p>
+    <div class="sl_nosplit">This is div text with a nosplit class containing a <p class="sl_nosplit">P tag with nosplit.</p></div>
+    <p id="main"></p>
+    <p id="concat"></p>
+    <p id="concatagain"></p>
+    <div id="p_example" slCompositeString="true"></div>
+  </div>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const myTimeout = setTimeout(heading, 1000);
+      const myTimeout3 = setTimeout(concatString, 1000);
+      const myTimeout4 = setTimeout(concatStringAgain, 1000);
+      /*const myTimeout5 = setTimeout(concatStringSpan, 1500);*/
+      const myTimeout6 = setTimeout(concatStringP, 1500);
+  });
+
+
+  </script>
+</body>
+</html>

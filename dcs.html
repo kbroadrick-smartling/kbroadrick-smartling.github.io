@@ -1,0 +1,53 @@
+<html>
+<head>
+  <script src="next_test.js"></script>
+  </head>
+  <body>
+  <div>
+    <h1 id="heading"></h1>
+    <p id="intro" translate="no"></p>
+    <p id="main"></p>
+    <p id="concat"></p>
+    <p id="concatagain"></p>
+    <p id="p_example"></p>
+  </div>
+
+
+  <script>
+    txt='{"response":{"heading": "Heading text rendered by a Javascript function.", "introductionText": "This text is also rednered by Javascript but the client doesn\'t want this translated so thay must add markup to their HTML to do it. No rules/rewrites work here.", "mainBody": "The is the start paragrapah text ", "spanText": " and this text is wrapped in a span tag which contains ", "linkText": "link text ", "spanTextEnd": " end span tag text.", "spanTextTwo": "and this is text wrapped in a span added to the page after the paragrapah with a ","pText": "Second P tag."}}'
+    console.log(txt)
+    var myObj = JSON.parse(txt);
+    function heading(){
+      document.getElementById('heading').innerHTML = myObj.response.heading;
+    }
+    function introText(){
+      document.getElementById('intro').innerHTML = myObj.response.introductionText
+    }
+    function mBody(){
+      document.getElementById('main').innerHTML = myObj.response.mainBody
+    }
+    function concatString(){
+      document.getElementById('concat').innerHTML = myObj.response.mainBody + "<span class=\"sl_nosplit\">" + myObj.response.spanText + "<a href=\"www.smartling.com\">" + myObj.response.linkText + "</a>" + myObj.response.spanTextEnd + "</span>"
+    }
+    function concatStringAgain(){
+      document.getElementById('concatagain').innerHTML = myObj.response.mainBody + "<span id=\"span_id\"></span>"
+      concatStringSpan();
+    }
+    function concatStringSpan(){
+      document.getElementById('span_id').innerHTML = myObj.response.spanTextTwo + "<a href=\"www.smartling.com\">" + myObj.response.linkText + "</a>" + myObj.response.spanTextEnd
+    }
+    function concatStringP(){
+      document.getElementById('p_example').innerHTML = myObj.response.mainBody + "<p>" + myObj.response.pText + "</p>"
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+      const myTimeout = setTimeout(heading, 1000);
+      const myTimeout3 = setTimeout(concatString, 1000);
+      const myTimeout4 = setTimeout(concatStringAgain, 1000);
+      /*const myTimeout5 = setTimeout(concatStringSpan, 1500);*/
+      const myTimeout6 = setTimeout(concatStringP, 1500);
+  });
+
+
+  </script>
+</body>
+</html>

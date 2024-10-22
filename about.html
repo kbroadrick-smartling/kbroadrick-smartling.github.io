@@ -1,0 +1,49 @@
+<html>
+<head>
+  <script>var slApiConfig={htmlTranslationMode:"react",uid:"49abf3cb5",locale:"fr-FR"};</script>
+  <script src="https://pinchjs-cdn.gdn.smartling.com/sl-tran-49abf3cb5-fr-FR.js"></script>
+  <script src="https://pinchjs-cdn.gdn.smartling.com/sl-init.js"></script>
+  
+  </head>
+  <body>
+    <h3>
+                <span class="feedbackFor">Feedback for </span>
+                <span class="itemName ">
+                    Blue Pale - Slouch V-Neck T-Shirt, Regular
+                </span>
+            </h3>
+    <h3>This is a static heading returned by the server.</h3>
+    <h4>This text is not replaced by any client side javascript.</h4>
+    <p>This is more static text. Note solo mode does not pick this text or the heading text up for translation as the content is rendered on the server side, not by Javascript on the client side.</p>
+  <div>
+    <h1 id="heading"></h1>
+     
+    <p id="intro" translate="no"></p>
+    <p id="main"></p>
+  </div>
+
+
+  <script>
+    txt='{"response":{"heading": "Heading text rendered by a Javascript function.","introductionText": "This text is also rednered by Javascript but the client doesn\'t want this translated so thay must add markup to their HTML to do it. No rules/rewrites work here.","mainBody": "This is some more text, again added by Javascript."}}'
+    console.log(txt)
+    var myObj = JSON.parse(txt);
+    function heading(){
+      document.getElementById('heading').innerHTML = myObj.response.heading;
+    }
+    function introText(){
+      document.getElementById('intro').innerHTML = myObj.response.introductionText
+    }
+    function mBody(){
+      document.getElementById('main').innerHTML = myObj.response.mainBody
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+      const myTimeout = setTimeout(heading, 1000);
+      const myTimeout1 = setTimeout(introText, 2000);
+      const myTimeout2 = setTimeout(mBody, 3000);
+  });
+
+
+  </script>
+</body>
+</html>
+
