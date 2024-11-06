@@ -19,11 +19,22 @@
 
   //END ORIGINAL SCRIPT
   $(document).ready(function () {
-    $.getJSON('days_of_week.json', function (data) {
+    //days of week - tagged json
+    $.getJSON('resources/json/days_of_week.json', function (data) {
       $.each(data.days, function (index, day) {
         $('#days-of-week').append($('<option>', {
           value: day,
           text: day
+        }));
+      });
+    });
+
+    //numbers -- rps rules
+    $.getJSON('resources/json/json_no_modifications.json', function (data) {
+      $.each(data.numbers, function (index, number) {
+        $('#numbers').append($('<option>', {
+          value: number,
+          text: number
         }));
       });
     });
