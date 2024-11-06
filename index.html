@@ -27,14 +27,15 @@
 
     //END ORIGINAL SCRIPT
 
-    $.getJSON('days-of-week.json', function (data) {
-      $.each(data, function (index, day) {
+    $.getJSON('days_of_week.json', function(data) {
+      $.each(data.days, function(index, day) {
         $('#days-of-week').append($('<option>', {
           value: day,
           text: day
         }));
       });
     });
+
   </script>
   <meta name="description"
     content="Shop for Grey Lion Padded Coat (3mths-7yrs) at Next Hungary | International shipping and returns available | Buy now!" />
