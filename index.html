@@ -29,7 +29,7 @@
 
     $.getJSON('days_of_week.json', function(data) {
       $.each(data.days, function(index, day) {
-        $('#days-of-week').append($('<option>', {
+        $('#days_of_week').append($('<option>', {
           value: day,
           text: day
         }));
