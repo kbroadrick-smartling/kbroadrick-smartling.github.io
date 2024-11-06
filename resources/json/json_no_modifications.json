@@ -4,5 +4,15 @@
       "two",
       "three", 
       "four"
+    ],
+    "months": [
+      "January",
+      "February",
+      "March"
+    ],
+    "meals": [
+      "breakfast",
+      "lunch",
+      "dinner"
     ]
   }
