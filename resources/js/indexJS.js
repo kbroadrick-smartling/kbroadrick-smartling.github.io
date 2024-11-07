@@ -37,5 +37,18 @@
           text: number
         }));
       });
+
+      //html content from json
+      var contentContainer = $('#content-container');
+
+      $.each(data.content, function(index, item) {
+        var itemHtml = `
+          <div class="content-item">
+            <h2>${item.title}</h2>
+            <div class="content-body">${item.body}</div>
+          </div>
+        `;
+        contentContainer.append(itemHtml);
+      });
     });
   });
