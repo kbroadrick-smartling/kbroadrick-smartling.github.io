@@ -1,6 +1,8 @@
 {
     "randomStringsForTest": [
       "String ABC",
-      "String DEF"
+      "String DEF",
+      "String Three",
+      "String Four"
     ]
 }
