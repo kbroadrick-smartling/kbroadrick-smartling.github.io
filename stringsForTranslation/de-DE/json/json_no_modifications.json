@@ -1,0 +1,20 @@
+{
+  "numbers" : ["Eins", "Zwei", "Drei", "Vier"],
+  "months" : ["Januar", "Februar", "März"],
+  "meals" : ["Frühstück", "Mittagessen", "Abendessen"],
+  "content" : [
+  {
+    "title" : "Rubrik 1",
+    "body" : "<p>Dies ist der erste Absatz mit fett <strong>gedrucktem Text</strong> und einem <a href='https://example.com'>Link</a>.</p><p>Und das ist der zweite Absatz.</p>"
+  },
+
+  {
+    "title" : "Rubrik 2",
+    "body" : "<ul><li>Tagesordnungspunkt 1</li><li>Tagesordnungspunkt 2</li><li>Tagesordnungspunkt 3</li></ul>"
+  },
+
+  {
+    "title" : "Rubrik 3",
+    "body" : "<div class='callout'><h3>Wichtiger Hinweis</h3><p>Dies ist ein Callout-Feld mit einigen zusätzlichen Informationen.</p></div>"
+  }]
+}
