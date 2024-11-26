@@ -1,0 +1,32 @@
+{
+  "numbers": [
+    "one",
+    "two",
+    "three",
+    "four"
+  ],
+  "months": [
+    "January",
+    "February",
+    "March"
+  ],
+  "meals": [
+    "breakfast",
+    "lunch",
+    "dinner"
+  ],
+  "content": [
+    {
+      "title": "Heading 1",
+      "body": "<p>This is the first paragraph with some <strong>bold text</strong> and a <a href='https://example.com'>link</a>.</p><p>And this is the second paragraph.</p>"
+    },
+    {
+      "title": "Heading 2",
+      "body": "<ul><li>Item 1</li><li>Item 2</li><li>Item 3</li></ul>"
+    },
+    {
+      "title": "Heading 3",
+      "body": "<div class='callout'><h3>Important Note</h3><p>This is a callout box with some additional information.</p></div>"
+    }
+  ]
+}
