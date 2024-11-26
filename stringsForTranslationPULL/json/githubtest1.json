@@ -1,6 +1,8 @@
 {
     "randomStringsForTest": [
       "String One",
-      "String Two"
+      "String Two",
+      "String Three",
+      "String Four"
     ]
 }
