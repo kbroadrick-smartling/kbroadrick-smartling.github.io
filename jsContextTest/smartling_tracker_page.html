@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartling Tracker Demo</title>
+    <script>
+        (function (w, o) { 
+            try { 
+                var h = document.getElementsByTagName('head')[0]; 
+                var s = document.createElement('script'); 
+                s.type = 'text/javascript'; 
+                s.async = 1; 
+                s.crossOrigin = 'anonymous'; 
+                s.src = '//d2c7xlmseob604.cloudfront.net/tracker.min.js'; 
+                s.onload = function () { 
+                    w.SmartlingContextTracker.init({ orgId: o }); 
+                }; 
+                h.insertBefore(s, h.firstChild); 
+            } catch (ex) { } 
+        })(window, 'KrKbKrCXtg6QHG9YpAmloA');
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            text-align: center;
+        }
+        
+        img {
+            max-width: 300px;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        button.green {
+            background-color: #28a745;
+        }
+        
+        button.green:hover {
+            background-color: #1e7e34;
+        }
+        
+        #mainText {
+            font-size: 18px;
+            margin: 20px 0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Smartling Tracker Demo Page</h1>
+        
+        <div id="mainText">
+            Welcome to our demo page! This is some simple text content.
+        </div>
+        
+        <br><br>
+        
+        <button id="updateButton" onclick="updateContent()">Click to Update</button>
+    </div>
+
+    <script>
+        function setOrgId(orgId) {
+            if (window.SmartlingContextTracker) {
+                SmartlingContextTracker.disable();
+                SmartlingContextTracker.init({ orgId: orgId });
+            }
+        }
+        
+        function updateContent() {
+            // Update the text content
+            const textElement = document.getElementById('mainText');
+            textElement.textContent = 'Welcome to our demo page! This is some simple text content. Updated Org 2';
+            
+            // Change button color to green
+            const button = document.getElementById('updateButton');
+            button.classList.add('green');
+            button.textContent = 'Updated!';
+            
+            // Call the setOrgId function
+            setOrgId("wCJ-z008P3HCFoKGjiZM1w");
+        }
+    </script>
+</body>
+</html>
