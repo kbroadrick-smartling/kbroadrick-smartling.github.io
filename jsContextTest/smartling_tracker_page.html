@@ -14,7 +14,15 @@
                 s.crossOrigin = 'anonymous'; 
                 s.src = '//d2c7xlmseob604.cloudfront.net/tracker.min.js'; 
                 s.onload = function () { 
-                    w.SmartlingContextTracker.init({ orgId: o }); 
+                    w.SmartlingContextTracker.init({
+                    orgId: orgId,
+                    mode: "manual",
+                    calculateHashsumsSignatureDisabled: true,
+                    onInit: () => {
+                        SmartlingContextTracker.enable();
+                        SmartlingContextTracker.captureContext();
+                    }
+                });
                 }; 
                 h.insertBefore(s, h.firstChild); 
             } catch (ex) { } 
@@ -86,11 +94,16 @@
 
     <script>
         function setOrgId(orgId) {
-            if (window.SmartlingContextTracker) {
-                SmartlingContextTracker.disable();
-                SmartlingContextTracker.init({ orgId: orgId });
-                SmartlingContextTracker.enable();
-            }
+            SmartlingContextTracker.disable();
+            SmartlingContextTracker.init({
+                orgId: orgId,
+                mode: "manual",
+                calculateHashsumsSignatureDisabled: true,
+                onInit: () => {
+                    SmartlingContextTracker.enable();
+                    SmartlingContextTracker.captureContext();
+                }
+            });
         }
         
         function updateContent() {
