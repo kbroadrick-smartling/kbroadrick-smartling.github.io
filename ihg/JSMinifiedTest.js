@@ -15,9 +15,9 @@ sl_tr_start();
 
 const me = {
   enData: {
-    LO_TITLE: "KB Log Out Alert",
-    LO_MESSAGE: "KB You have been logged out due to inactivity",
-    LO_CONTINUE: "KB Go to Login Screen"
+    LO_TITLE: "Log Out Alert",
+    LO_MESSAGE: "You have been logged out due to inactivity",
+    LO_CONTINUE: "Go to Login Screen"
   }
 };
 sl_tr_end();
