@@ -1,4 +1,5 @@
 {
   "title": "Commit des chaînes de test Github",
-  "description": "Commit de la description du test Github"
+  "description": "Commit de la description du test Github",
+  "newkey1": "Voici une nouvelle clé pour un test de PR"
 }
