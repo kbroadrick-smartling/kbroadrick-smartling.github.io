@@ -1,4 +1,5 @@
 {
   "title": "GitHub-Teststrings-Commit",
-  "description": "GitHub-Testbeschreibung Commit"
+  "description": "GitHub-Testbeschreibung Commit",
+  "newkey1": "Hier ist ein neuer Schlüssel für einen PR-Test"
 }
