@@ -8,8 +8,8 @@
 ### to merge POT files into PO files.
 msgid ""
 msgstr ""
-"Language: en\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es_LA\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 ## This is a PO Template file.
 ##
@@ -21,94 +21,94 @@ msgstr ""
 ## date. Leave `msgstr`s empty as changing them here has no
 ## effect: edit them in PO (`.po`) files instead.
 msgid "required"
-msgstr ""
+msgstr "Obligatorio"
 
 msgid "can't be blank"
-msgstr ""
+msgstr "no puede dejarse en blanco"
 
 msgid "has already been taken"
-msgstr ""
+msgstr "ya está tomado"
 
 msgid "is invalid"
-msgstr ""
+msgstr "no es válido"
 
 msgid "must be accepted"
-msgstr ""
+msgstr "debe ser aceptado"
 
 msgid "has invalid format"
-msgstr ""
+msgstr "tiene un formato no válido"
 
 msgid "has an invalid entry"
-msgstr ""
+msgstr "tiene un registro no válido"
 
 msgid "is reserved"
-msgstr ""
+msgstr "está reservado"
 
 msgid "does not match confirmation"
-msgstr ""
+msgstr "no coincide con la confirmación"
 
 msgid "is still associated with this entry"
-msgstr ""
+msgstr "aún está asociado/a con este registro"
 
 msgid "are still associated with this entry"
-msgstr ""
+msgstr "aún están asociados/as con este registro"
 
 msgid "should have %{count} item(s)"
 msgid_plural "should have %{count} item(s)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "debe tener %{count} elementos"
+msgstr[1] "debe tener %{count} elementos"
 
 msgid "should be %{count} character(s)"
 msgid_plural "should be %{count} character(s)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "deben ser %{count} caracteres"
+msgstr[1] "deben ser %{count} caracteres"
 
 msgid "should be %{count} byte(s)"
 msgid_plural "should be %{count} byte(s)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "deben ser %{count} bytes"
+msgstr[1] "deben ser %{count} bytes"
 
 msgid "should have at least %{count} item(s)"
 msgid_plural "should have at least %{count} item(s)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "debe contener como mínimo %{count} elementos"
+msgstr[1] "debe contener como mínimo %{count} elementos"
 
 msgid "should be at least %{count} character(s)"
 msgid_plural "should be at least %{count} character(s)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "debe contener como mínimo %{count} caracteres"
+msgstr[1] "debe contener como mínimo %{count} caracteres"
 
 msgid "should be at least %{count} byte(s)"
 msgid_plural "should be at least %{count} byte(s)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "debe contener como mínimo %{count} bytes"
+msgstr[1] "debe contener como mínimo %{count} bytes"
 
 msgid "should have at most %{count} item(s)"
 msgid_plural "should have at most %{count} item(s)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "debe contener como máximo %{count} elementos"
+msgstr[1] "debe contener como máximo %{count} elementos"
 
 msgid "should be at most %{count} character(s)"
 msgid_plural "should be at most %{count} character(s)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "debe contener como máximo %{count} caracteres"
+msgstr[1] "debe contener como máximo %{count} caracteres"
 
 msgid "should be at most %{count} byte(s)"
 msgid_plural "should be at most %{count} byte(s)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "debe contener como máximo %{count} bytes"
+msgstr[1] "debe contener como máximo %{count} bytes"
 
 msgid "must be less than %{number}"
-msgstr ""
+msgstr "debe ser menor que %{number}"
 
 msgid "must be greater than %{number}"
-msgstr ""
+msgstr "debe ser mayor que %{number}"
 
 msgid "must be less than or equal to %{number}"
-msgstr ""
+msgstr "debe ser menor o igual a %{number}"
 
 msgid "must be greater than or equal to %{number}"
-msgstr ""
+msgstr "debe ser mayor o igual a %{number}"
 
 msgid "must be equal to %{number}"
-msgstr ""
+msgstr "debe ser igual a %{number}"
